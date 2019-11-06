@@ -1,7 +1,5 @@
 <?php get_header(); ?>
 
-<section class="about">
-
 <?php if( have_posts() ) :
 
 //The WordPress Loop: loads post content 
@@ -21,6 +19,5 @@
         <p>No posts found</p>
 <?php endif;?>
 
-</section>
     
 <?php get_footer();?>
