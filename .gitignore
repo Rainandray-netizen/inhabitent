@@ -47,6 +47,8 @@ uploads/wp-migrate-db/
 # Ignore packages #
 # =============== #
 themes/inhabitent/node_modules/
-
+# My additions #
+# =============== #
+themes/inhabitent/assets
 
 
