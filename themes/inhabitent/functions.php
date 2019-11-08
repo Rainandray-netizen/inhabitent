@@ -71,6 +71,22 @@ function inhabitent_post_types(){
         ),
         "menu_icon" => "dashicons-buddicons-activity"
     ));
+    //added below, might be broken idk
+    register_post_type("adventures",array(
+        "has_archive" => true,
+        "show_in_rest" => true,
+        "supports" => array("title","editor","excerpt","thumbnail",),
+        "public" => true,
+        "labels" => array(
+            "name" => "Adventures",
+            "add_new_items" => "Add New Adventure",
+            "edit_item" => "Edit Adventure",
+            "all_items" => "All Adventures",
+            "singular_name" => "Adventure"
+        ),
+        "menu_icon" => "dashicons-palmtree"
+    ));
+    //added above
 }
 
 add_action("init","inhabitent_post_types");
@@ -110,6 +126,7 @@ function inhabitent_product_types() {
     );
  
     register_taxonomy( $slug, array( 'products' ), $args );
+    
   }
  
   add_action( 'init', 'inhabitent_product_types' );

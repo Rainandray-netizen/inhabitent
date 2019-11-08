@@ -61,5 +61,24 @@ body {
 .about {
   background-color: green; }
 
+.products {
+  display: grid;
+  grid-gap: 50px 50px;
+  grid-template-rows: 250px 250px 250px 250px;
+  grid-template-columns: 250px 250px 250px 250px; }
+
+.grid-item a {
+  text-decoration: none;
+  color: black; }
+
+.grid-item img {
+  height: 250px;
+  width: 250px;
+  -o-object-fit: cover;
+     object-fit: cover; }
+
+.blog {
+  background-color: red; }
+
 body {
-  background-color: purple; }
+  width: 1120px; }
