@@ -63,17 +63,19 @@ body {
 
 .products {
   display: grid;
-  grid-gap: 50px 50px;
-  grid-template-rows: 250px 250px 250px 250px;
-  grid-template-columns: 250px 250px 250px 250px; }
+  grid-gap: 20px 20px;
+  grid-template-rows: 225px 225px 225px 225px;
+  grid-template-columns: 225px 225px 225px 225px;
+  margin: 80px; }
 
 .grid-item a {
   text-decoration: none;
-  color: black; }
+  color: black;
+  position: absolute; }
 
 .grid-item img {
-  height: 250px;
-  width: 250px;
+  height: 225px;
+  width: 225px;
   -o-object-fit: cover;
      object-fit: cover; }
 
