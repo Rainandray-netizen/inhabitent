@@ -1,8 +1,26 @@
 <?php get_header(); ?>
 <h1>this is the product archive</h1>
-<main class="products">
-<?php if( have_posts() ) :
 
+<section class="center">
+    <div>
+    <?php
+    $terms = get_terms(array(
+        "taxonomy"=>"product-type",
+        "hide-empty"=>false,
+    ));
+    
+    foreach($terms as $term):
+        echo str_replace(" Stuff","",$term->name);
+        // echo $term->slug;
+        // echo "<br>";
+    endforeach;
+    ?>
+ </div>
+</section>
+
+<section class="products">
+<?php if( have_posts() ) :
+    
 //The WordPress Loop: loads post content 
     while( have_posts() ) :
         the_post(); ?>
@@ -18,6 +36,6 @@
 <?php else : ?>
         <p>No posts found</p>
 <?php endif;?>
-</main>
+</section>
     
 <?php get_footer();?>

@@ -50,8 +50,8 @@
     foreach($terms as $term):
         echo $term->name;
         echo "<br>";
-        echo $term->slug;
-        echo "<br>";
+        // echo $term->slug;
+        // echo "<br>";
     endforeach;
  ?>
 <!-- end categories posts-->
