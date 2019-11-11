@@ -7,5 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 </head>
 <body <?php body_class();?>>
+<div class="websitebody">
 <?php wp_nav_menu(array("theme_location" => "Primary"));?>
 <h1><?php bloginfo('name');?></h1>

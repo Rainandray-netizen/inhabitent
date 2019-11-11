@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-
 <section class="center">
     <div class="flexbar">
     <?php
@@ -19,7 +18,7 @@
     ?>
  </div>
 </section>
-
+<hr class="dashedline">
 <section class="products">
 <?php if( have_posts() ) :
     
@@ -28,7 +27,12 @@
         the_post(); ?>
     <article class="grid-item">
         <?php the_post_thumbnail("large");?>
-        <a class="bodytext" href=<?php the_permalink();?>><?php the_title(); ?></a>
+        <div></div>
+        <figcaption>
+            <h1>..............................................</h1>
+            <a class="bodytext" href=<?php the_permalink();?>><?php the_title();?></a>
+            <p class="bodytext medgrey"><?php echo "$" . get_field('price');?></p>
+        </figcaption>
     </article>
     <!-- Loop ends -->
     <?php endwhile;?>

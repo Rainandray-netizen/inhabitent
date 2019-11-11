@@ -137,7 +137,7 @@ table {
           justify-content: center; }
 
 .flexbar {
-  width: 300px;
+  width: 250px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -149,7 +149,11 @@ table {
   border: 1px solid #e1e1e1; }
 
 .dashedline {
-  border: 1px dashed #c8c8c8; }
+  border: 1px dashed #c8c8c8;
+  margin: 0px 80px; }
+
+hr.dashedline {
+  margin: 50px 80px; }
 
 .about {
   background-color: green; }
@@ -157,23 +161,53 @@ table {
 .products {
   display: grid;
   grid-gap: 20px 20px;
-  grid-auto-rows: 225px;
+  grid-auto-rows: 275px;
   grid-template-columns: 225px 225px 225px 225px;
-  margin: 80px; }
+  margin: 0px 80px 100px 80px; }
 
-.grid-item a {
-  text-decoration: none;
-  font-size: 16px; }
-
-.grid-item img {
-  height: 225px;
-  width: 225px;
-  -o-object-fit: cover;
-     object-fit: cover; }
+.grid-item {
+  display: grid;
+  grid-template-rows: 225px 5px 50px; }
+  .grid-item figcaption {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    grid-row-start: 3;
+    border: 1px solid #e1e1e1;
+    padding: 0px 20px; }
+    .grid-item figcaption a, .grid-item figcaption p {
+      text-decoration: none;
+      font-size: 12px;
+      background-color: white;
+      z-index: 9; }
+    .grid-item figcaption h1 {
+      position: absolute; }
+  .grid-item div {
+    grid-row-start: 2;
+    background-color: #e1e1e1; }
+  .grid-item img {
+    height: 225px;
+    width: 225px;
+    -o-object-fit: cover;
+       object-fit: cover; }
 
 .blog {
   background-color: red; }
 
-html {
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.websitebody {
   width: 1120px;
   background: white; }

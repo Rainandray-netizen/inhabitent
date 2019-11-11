@@ -36,7 +36,11 @@ Text Domain: inhabitant
 @import 'themes/theme';
 @import 'themes/admin';
 
-html{
+body{
+    display:flex;
+    justify-content:center;
+}
+.websitebody{
     width:1120px;
-    background: white;  
+    background: white;
 }
