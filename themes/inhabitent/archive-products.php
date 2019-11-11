@@ -10,7 +10,7 @@
     ));
     
     foreach($terms as $term):
-        echo str_replace(" Stuff","",$term->name);
+        echo strtoupper(str_replace(" Stuff","",$term->name));
         // echo $term->slug;
         // echo "<br>";
     endforeach;
