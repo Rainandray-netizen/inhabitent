@@ -7,8 +7,8 @@
     while( have_posts() ) :
         the_post(); ?>
     <article class="grid-item">
-    <a href=<?php the_permalink();?>><?php the_title(); ?></a>
         <?php the_post_thumbnail("large");?>
+        <a class="bodytext" href=<?php the_permalink();?>><?php the_title(); ?></a>
     </article>
     <!-- Loop ends -->
     <?php endwhile;?>
