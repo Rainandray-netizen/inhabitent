@@ -2,15 +2,18 @@
 <h1>this is the product archive</h1>
 
 <section class="center">
-    <div>
+    <div class="flexbar">
     <?php
     $terms = get_terms(array(
         "taxonomy"=>"product-type",
         "hide-empty"=>false,
     ));
     
-    foreach($terms as $term):
-        echo strtoupper(str_replace(" Stuff","",$term->name));
+    foreach($terms as $term):?>
+        <p class="headingtext">
+        <?php echo strtoupper(str_replace(" Stuff","",$term->name));?>
+        </p>
+    <?php
         // echo $term->slug;
         // echo "<br>";
     endforeach;
