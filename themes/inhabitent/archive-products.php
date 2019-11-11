@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-<h1>this is the product archive</h1>
 
 <section class="center">
     <div class="flexbar">
@@ -10,7 +9,7 @@
     ));
     
     foreach($terms as $term):?>
-        <p class="headingtext">
+        <p class="headingtext green">
         <?php echo strtoupper(str_replace(" Stuff","",$term->name));?>
         </p>
     <?php

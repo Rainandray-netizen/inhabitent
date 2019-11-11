@@ -97,13 +97,11 @@ table {
   font-style: normal; }
 
 .bodytext {
-  font-size: 16px;
   color: #404040;
   font-family: "Merriweather"; }
 
 .headingtext {
-  font-family: "Novecento-Bold";
-  font-size: 24px;
+  font-family: "Novecento";
   color: #404040; }
 
 .green {
@@ -124,6 +122,12 @@ table {
 .medgrey {
   color: #808080; }
 
+.smallfont {
+  font-size: 16px; }
+
+.largefont {
+  font-size: 32px; }
+
 .center {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -140,6 +144,12 @@ table {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+
+.solidline {
+  border: 1px solid #e1e1e1; }
+
+.dashedline {
+  border: 1px dashed #c8c8c8; }
 
 .about {
   background-color: green; }

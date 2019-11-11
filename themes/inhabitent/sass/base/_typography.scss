@@ -68,14 +68,14 @@
     font-weight: bold;
     font-style: normal;
   }
+
 .bodytext{
-    font-size:16px;
     color:#404040;
     font-family:"Merriweather";
 }
+
 .headingtext{
-    font-family:"Novecento-Bold"; 
-    font-size:24px;
+    font-family:"Novecento";
     color:#404040;
 }
 
@@ -101,4 +101,12 @@
 
 .medgrey{
   color:#808080;
+}
+
+.smallfont{
+  font-size:16px;
+}
+
+.largefont{
+  font-size:32px;
 }
