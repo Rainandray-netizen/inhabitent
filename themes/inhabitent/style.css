@@ -104,6 +104,10 @@ table {
   font-family: "Novecento";
   color: #404040; }
 
+.headingtextbold {
+  font-family: "Novecento-Bold";
+  color: #404040; }
+
 .green {
   color: #248A83; }
 
@@ -157,6 +161,10 @@ hr.dashedline {
 
 .about {
   background-color: green; }
+
+.pagetitle {
+  text-align: center;
+  margin: 70px 0px 50px 0px; }
 
 .products {
   display: grid;

@@ -8,5 +8,7 @@
 </head>
 <body <?php body_class();?>>
 <div class="websitebody">
-<?php wp_nav_menu(array("theme_location" => "Primary","menu"=>"main"));?>
+<?php wp_nav_menu(array(
+    "theme_location" => "Primary",
+    "menu"=>"main"));?>
 <h1><?php bloginfo('name');?></h1>

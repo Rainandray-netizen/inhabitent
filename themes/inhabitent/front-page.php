@@ -6,7 +6,6 @@
     while( have_posts() ) :
         the_post(); ?>
 
-
     <!-- Loop ends -->
     <?php endwhile;?>
 

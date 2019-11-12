@@ -1,4 +1,7 @@
 <?php get_header(); ?>
+
+<h1 class="headingtextbold pagetitle largefont">Shop Stuff</h1>
+
 <section class="center">
     <div class="flexbar">
     <?php
@@ -8,7 +11,7 @@
     ));
     
     foreach($terms as $term):?>
-        <p class="headingtext green">
+        <p class="headingtextbold green">
         <?php echo strtoupper(str_replace(" Stuff","",$term->name));?>
         </p>
     <?php
@@ -20,6 +23,8 @@
 </section>
 <hr class="dashedline">
 <section class="products">
+
+
 <?php if( have_posts() ) :
     
 //The WordPress Loop: loads post content 

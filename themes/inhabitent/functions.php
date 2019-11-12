@@ -131,5 +131,18 @@ function inhabitent_product_types() {
  
   add_action( 'init', 'inhabitent_product_types' );
   
+  function alphabet_sort( $query ) {
+    if ($query->is_main_query() && is_post_type_archive( 'products' ) ) {
+
+        $query->set(
+            'orderby',"title");
+        $query->set(
+            "order","ASC" );
+        return;
+        }
+    }
+    add_action( 'pre_get_posts', 'alphabet_sort', 1 );
+    //this sorts the product posts alphabetically
+
 ?>
 
