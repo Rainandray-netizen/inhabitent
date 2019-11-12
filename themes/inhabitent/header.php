@@ -8,7 +8,11 @@
 </head>
 <body <?php body_class();?>>
 <div class="websitebody">
-<?php wp_nav_menu(array(
-    "theme_location" => "Primary",
-    "menu"=>"main"));?>
-<h1><?php bloginfo('name');?></h1>
+    <header class="header">
+        <img src="<?php echo get_stylesheet_directory_uri() ?>/images/logos/inhabitent-logo-tent.svg" alt="#">
+        <?php wp_nav_menu(array(
+            "theme_location" => "Primary",
+            "menu"=>"main"
+        ));?>    
+    </header>
+    <hr class="solidline nomargin">

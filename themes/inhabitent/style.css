@@ -127,7 +127,7 @@ table {
   color: #808080; }
 
 .smallfont {
-  font-size: 16px; }
+  font-size: 18px; }
 
 .largefont {
   font-size: 32px; }
@@ -141,13 +141,37 @@ table {
           justify-content: center; }
 
 .flexbar {
-  width: 250px;
+  width: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+
+.header {
+  margin: 0px 80px;
+  display: grid;
+  grid-template-columns: 600px 360px;
+  grid-template-rows: 40px; }
+  .header img {
+    height: 40px;
+    width: 40px; }
+  .header .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 40px; }
+    .header .menu li a {
+      text-decoration: none;
+      font-family: "Novecento";
+      color: #248A83; }
 
 .solidline {
   border: 1px solid #e1e1e1; }
@@ -159,12 +183,15 @@ table {
 hr.dashedline {
   margin: 50px 80px; }
 
+.nomargin {
+  margin: 0px; }
+
 .about {
   background-color: green; }
 
 .pagetitle {
   text-align: center;
-  margin: 70px 0px 50px 0px; }
+  margin: 50px 0px 40px 0px; }
 
 .products {
   display: grid;
@@ -175,7 +202,7 @@ hr.dashedline {
 
 .grid-item {
   display: grid;
-  grid-template-rows: 225px 5px 50px; }
+  grid-template-rows: 223px 5px 50px; }
   .grid-item figcaption {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -201,7 +228,7 @@ hr.dashedline {
     background-color: #e1e1e1; }
   .grid-item img {
     border: 1px solid #e1e1e1;
-    height: 225px;
+    height: 223px;
     width: 225px;
     -o-object-fit: cover;
        object-fit: cover; }
