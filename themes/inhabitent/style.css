@@ -192,6 +192,7 @@ hr.dashedline {
     grid-row-start: 2;
     background-color: #e1e1e1; }
   .grid-item img {
+    border: 1px solid #e1e1e1;
     height: 225px;
     width: 225px;
     -o-object-fit: cover;
