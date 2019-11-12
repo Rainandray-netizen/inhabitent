@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<h1 class="headingtextbold pagetitle largefont">SHOP STUFF</h1>
+<h1 class="headingtextbold pagetitle largefont"> STUFF</h1>
 <section class="center">
     <div class="flexbar">
     <?php

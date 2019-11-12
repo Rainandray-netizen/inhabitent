@@ -9,7 +9,9 @@
 <body <?php body_class();?>>
 <div class="websitebody">
     <header class="header">
-        <img src="<?php echo get_stylesheet_directory_uri() ?>/images/logos/inhabitent-logo-tent.svg" alt="#">
+        <a href="/inhabitent">
+            <img src="<?php echo get_stylesheet_directory_uri() ?>/images/logos/inhabitent-logo-tent.svg" alt="#">
+         </a>
         <?php wp_nav_menu(array(
             "theme_location" => "Primary",
             "menu"=>"main"
