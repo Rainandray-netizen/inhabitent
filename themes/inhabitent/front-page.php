@@ -54,6 +54,7 @@
     endforeach;
  ?>
 <!-- end categories posts-->
-
-<?php get_sidebar();?>
+<aside>
+  <?php get_sidebar();?>
+</aside class="sidebar">
 <?php get_footer();?>

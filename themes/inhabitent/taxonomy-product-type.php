@@ -1,14 +1,22 @@
 <?php get_header(); ?>
-<h1 class="headingtextbold pagetitle largefont"> STUFF</h1>
-<section class="center">
-    <div class="flexbar">
-    <?php
+<?php
     $terms = get_terms(array(
         "taxonomy"=>"product-type",
         "hide-empty"=>false,
-    ));
+    ));?>
+
+<h1 class="headingtextbold pagetitle largefont"> <?php
+
+$replaceme = array(get_home_url()."/product-type/","-");
+$replacewith = array(""," ");
+echo strtoupper(str_replace($replaceme,$replacewith,home_url($wp->request)));
+
+?></h1>
+<section class="center">
+    <div class="flexbar">
     
-    foreach($terms as $term):?>
+    
+    <?php foreach($terms as $term):?>
     
         <a href="<?php echo get_home_url() . "/product-type/" . $term->slug;?>">
             <p class="headingtext green smallfont">
