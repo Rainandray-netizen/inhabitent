@@ -1,14 +1,14 @@
 <?php get_header(); ?>
 
 <?php if( have_posts() ) :
-
-//The WordPress Loop: loads post content 
-    while( have_posts() ) :
-        the_post(); ?>
-
+//The WordPress Loop: loads post content ?>
+<header class="pageheader">
+    <?php while( have_posts() ) :
+        the_post();
+        the_post_thumbnail();?>
     <!-- Loop ends -->
     <?php endwhile;?>
-
+</header>
     <?php the_posts_navigation();?>        
 
 <?php else : ?> 
@@ -29,6 +29,7 @@
 
     <?php the_title(); ?>
     <?php the_excerpt(); ?>
+    <?php the_post_thumbnail("medium");?>
 
   <?php endwhile; ?>
   <?php wp_reset_postdata(); ?>

@@ -186,6 +186,15 @@ hr.dashedline {
 .nomargin {
   margin: 0px; }
 
+.pageheader img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 1120px;
+  height: 600px;
+  -webkit-filter: brightness(75%);
+          filter: brightness(75%);
+  left: 100px; }
+
 .about {
   background-color: green; }
 
