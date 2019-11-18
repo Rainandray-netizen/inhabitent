@@ -1,0 +1,17 @@
+.footy{
+    background:url("images/dark-wood@2x.png");
+    grid-template-columns:280px 280px 280px 280px;
+    grid-template-rows:300px;
+
+    .widgettitle{
+        color:#d99054;
+        font-family:"Novecento";
+    }
+    p{
+        color:white;
+        font-family:"Merriweather";
+    }
+    li{
+        grid-column-start: 2;
+    }
+}

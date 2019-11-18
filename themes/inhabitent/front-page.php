@@ -56,6 +56,6 @@
  ?>
 <!-- end categories posts-->
 <aside>
-  <?php get_sidebar();?>
-</aside class="sidebar">
+<?php dynamic_sidebar("sidebar-1");?>
+</aside>
 <?php get_footer();?>
