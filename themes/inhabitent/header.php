@@ -9,8 +9,6 @@
 <body <?php body_class();?>>
 <div class="websitebody">
 
-<?php $slug = basename(get_permalink()); 
-    echo $slug?>
 
     <header class="header">
         <a href="/inhabitent">

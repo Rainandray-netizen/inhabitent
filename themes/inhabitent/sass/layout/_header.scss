@@ -1,7 +1,7 @@
 .header{
     margin:0px 80px;
     display:grid;
-    grid-template-columns: 600px 360px;
+    grid-template-columns: 350px 300px 310px;
     grid-template-rows:40px;
 
     img{
@@ -21,6 +21,36 @@
             text-decoration:none;
             font-family:"Novecento";
             color:#248A83;
+        }
+    }
+
+    .search-form{
+        display:flex;
+        justify-content: flex-end;
+        align-items:center;
+        padding:0px 10px;
+
+        fieldset{
+            .search-toggle{
+                color:#248A83;
+            }
+            label{
+                margin:0px 5px;
+                .search-field{
+                    height:30px;
+                    border:1px solid #248A83;
+                    border-radius:50px;
+                    padding:0px 10px;
+                }
+            }
+            #search-submit{
+                background-color:#248A83;
+                border:1px solid #248A83;
+                border-radius:50px;
+                height:30px;
+                color:white;
+                font-family:"Novecento";
+            }
         }
     }
 }

@@ -152,7 +152,7 @@ table {
 .header {
   margin: 0px 80px;
   display: grid;
-  grid-template-columns: 600px 360px;
+  grid-template-columns: 350px 300px 310px;
   grid-template-rows: 40px; }
   .header img {
     height: 40px;
@@ -172,6 +172,33 @@ table {
       text-decoration: none;
       font-family: "Novecento";
       color: #248A83; }
+  .header .search-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0px 10px; }
+    .header .search-form fieldset .search-toggle {
+      color: #248A83; }
+    .header .search-form fieldset label {
+      margin: 0px 5px; }
+      .header .search-form fieldset label .search-field {
+        height: 30px;
+        border: 1px solid #248A83;
+        border-radius: 50px;
+        padding: 0px 10px; }
+    .header .search-form fieldset #search-submit {
+      background-color: #248A83;
+      border: 1px solid #248A83;
+      border-radius: 50px;
+      height: 30px;
+      color: white;
+      font-family: "Novecento"; }
 
 .solidline {
   border: 1px solid #e1e1e1; }
