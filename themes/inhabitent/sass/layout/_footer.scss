@@ -1,17 +1,43 @@
 .footy{
     background:url("images/dark-wood@2x.png");
-    grid-template-columns:280px 280px 280px 280px;
-    grid-template-rows:300px;
+    display:grid;
+    grid-template-columns:250px 330px 380px;
+    grid-template-rows:auto;
+    padding:0px 80px;
+    font-size:12px;
 
     .widgettitle{
         color:#d99054;
         font-family:"Novecento";
+        font-size:18px;
     }
     p{
         color:white;
         font-family:"Merriweather";
     }
-    li{
+    i{
+        padding:5px;
+    }
+    :nth-child(2){
         grid-column-start: 2;
+    } 
+    li{
+        margin:30px;
+        list-style-type: none;
+        line-height:2;
+    }
+    :nth-child(3){
+        grid-column-start:3;
+    }
+    .footer-logo{
+        grid-column-start: 3;
+        display:flex;
+        width:250px;
+        img{
+            width:250px;
+            height:100px;
+            object-fit:contain;
+            justify-content: flex-end;
+        }
     }
 }

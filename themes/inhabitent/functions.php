@@ -153,8 +153,18 @@ function inhabitent_product_types() {
         return;
         }
     }
-    add_action( 'pre_get_posts', 'alphabet_sort', 1 );
-    //this sorts the product posts alphabetically
+    add_action( 'pre_get_posts', 'date_sort', 1 );
 
+    function date_sort( $query ) {
+        if ($query->is_main_query() && is_home() ) {
+    
+            $query->set(
+                'orderby',"publish_date");
+            $query->set(
+                "order","DESC" );
+            return;
+            }
+        }
+        add_action( 'pre_get_posts', 'date_sort', 1 );
 ?>
 

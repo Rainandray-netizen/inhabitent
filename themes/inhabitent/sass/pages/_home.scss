@@ -1,10 +1,138 @@
+//this is the front page
 .pageheader{
-    img{
+    .wp-post-image{
         object-fit: cover;
         width:1120px;
         height:600px;
         filter:brightness(75%);
         left:100px;
     }
+    .frontpage-logo{
+        position:absolute;
+        top:20%;
+        left:42%;
+        width:1120px;
+        height:600px;
+        img{
+            justify-content:center;
+            align-items:center;
+        }
+        
+    }
 }
+
+.homepage-shop-wrapper{
+    display:flex;
+    justify-content: space-around;
+    .homepage-shop-article{
+        width:250px;
+        height:300px;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        border:grey 2px solid;
+        img{
+            width:100px;
+            object-fit: contain;
+            margin-top:10px;
+            margin-bottom:10;
+
+        }
+        button{
+            font-family:"Novecento";
+            font-size:14px;
+            padding:10px 20px;
+            margin-left:10px;
+            background-color:#248A83;
+            border:#248A83 1px solid;
+            color:white;
+        }
+        p{
+            padding:10px;
+            text-align:center;
+        }
+    }
+}
+
+
+.journal-heading{
+    font-family:"Novecento";
+    text-align:center;
+    margin:40px;
+}
+.journal-posts-wrapper{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:100px;
+    .frontpage-journal-item{
+        border: black 1px solid;
+        display:grid;
+        grid-template-rows: 223px 5px;
+        width:350px;
+        height:400px;
+        img{
+            width:350px;
+            height:223px;
+        }
+        div{
+            grid-row-start:2;
+            background-color:#e1e1e1;
+        }
+        h3{
+            font-size:16px;
+            font-family:"Merriweather";
+            padding:10px;
+        }
+        h1{
+            font-size:24px;
+            padding:10px;
+        }
+        button{
+            font-family:"Novecento";
+        font-size:14px;
+        padding:10px 20px;
+        margin-left:10px;
+        background-color:white;
+        border: 2px solid black;
+        }
+    }
+} 
+// this is the journal page
+.journaldiv{
+    position:relative;
+    .titlebg{
+        background-color:#248A83;
+        color:white;
+        width: 600px;
+        position:absolute;
+        padding:10px;
+        z-index:9;
+        top:10%; 
+    } 
+
+    .bylinebg{
+        background-color:#248A83;
+        color:white;
+        // width:450px;
+        position:absolute;
+        right:2.15%;
+        bottom:2.15%;
+        h2{
+            font-size:16px;
+            padding:5px;
+            font-weight:300px;
+        }
+    }
+
+    .index-img {
+        margin: 10px 0px 10px 0px;
+        width:820px;
+        object-fit:contain;
+        margin-right:10px;
+    }
+}
+.article-content{
+    margin: 20px 20px 20px 0px;
+}
+
 

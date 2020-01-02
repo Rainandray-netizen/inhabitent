@@ -1,3 +1,25 @@
 .about{
-    background-color:green; 
+    .about-header{
+        width:1120px;
+        height:500px;
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        img{
+            width:1120px;
+            height:500px;
+            object-fit:cover;
+        }
+        h2{
+            color:white;
+            position:absolute;
+        }
+    }
+    h2{
+        text-align:center;
+        margin:30px;
+    }
+    p{
+        margin:0px 80px 40px 80px;
+    }
 }

@@ -5,9 +5,17 @@
     while( have_posts() ) :
         the_post(); ?>
     
-    <h2><?php the_title(); ?></h2>
-    <?php the_post_thumbnail("large");?>
-    <?php the_content(); ?>
+    <article class="single-product-wrapper">
+        <div class="single-product-image">
+            <?php the_post_thumbnail("large");?>
+        </div>
+        <div class="single-product-content">
+            <h2 class="orange"><?php the_title(); ?></h2>
+            <h4><?php echo "$".get_field('price') ?></h4>
+            <?php the_content(); ?>
+        </div>
+    </article>
+    
     
     <!-- Loop ends -->
     <?php endwhile;?>
@@ -15,7 +23,7 @@
     <?php the_posts_navigation();?>
 
 <?php else : ?>
-        <p>No posts found</p>
+    <p>No posts found</p>
 <?php endif;?>
 
     

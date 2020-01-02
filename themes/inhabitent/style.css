@@ -132,6 +132,20 @@ table {
 .largefont {
   font-size: 32px; }
 
+p {
+  font-size: 16px;
+  color: #404040;
+  font-family: "Merriweather";
+  line-height: 24px;
+  font-weight: 500; }
+
+h1, h2, h3 {
+  font-family: "Novecento-Bold";
+  font-size: 42px; }
+
+h4, h5, h6 {
+  font-family: "Novecento"; }
+
 .center {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -148,6 +162,62 @@ table {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+
+.index-button {
+  font-family: "Novecento";
+  font-size: 14px;
+  padding: 10px 20px;
+  margin: 10px 0px 30px 0px;
+  background-color: white;
+  border: 2px solid black; }
+
+.sidebar-aside {
+  margin-left: 30px;
+  line-height: 40px; }
+  .sidebar-aside h2 {
+    font-size: 28px;
+    line-height: 40px; }
+  .sidebar-aside span {
+    font-family: 'Merriweather-Bold';
+    line-height: 40px; }
+  .sidebar-aside p {
+    line-height: 40px; }
+
+.sidebar-grid-wrapper {
+  display: grid;
+  grid-template-columns: 75% 25%; }
+  .sidebar-grid-wrapper .sidebar-grid-content {
+    grid-column-start: 1;
+    border-right: 2px solid #d4d4d4; }
+  .sidebar-grid-wrapper .sidebar-aside {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    list-style-type: none; }
+    .sidebar-grid-wrapper .sidebar-aside h2 {
+      margin-top: 20px; }
+
+.single-product-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 720px; }
+  .single-product-wrapper .single-product-image {
+    height: 400px;
+    width: 500px;
+    margin: 40px 40px 40px 80px; }
+    .single-product-wrapper .single-product-image img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: contain;
+         object-fit: contain; }
+  .single-product-wrapper .single-product-content {
+    width: 500px;
+    margin: 40px 40px 40px 40px; }
+    .single-product-wrapper .single-product-content h2 {
+      margin: 20px 0px; }
+    .single-product-wrapper .single-product-content h4 {
+      font-size: 32px;
+      margin: 20px 0px; }
 
 .header {
   margin: 0px 80px;
@@ -200,18 +270,50 @@ table {
       color: white;
       font-family: "Novecento"; }
 
+.single-products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px 80px; }
+
 .footy {
   background: url("images/dark-wood@2x.png");
-  grid-template-columns: 280px 280px 280px 280px;
-  grid-template-rows: 300px; }
+  display: grid;
+  grid-template-columns: 250px 330px 380px;
+  grid-template-rows: auto;
+  padding: 0px 80px;
+  font-size: 12px; }
   .footy .widgettitle {
     color: #d99054;
-    font-family: "Novecento"; }
+    font-family: "Novecento";
+    font-size: 18px; }
   .footy p {
     color: white;
     font-family: "Merriweather"; }
-  .footy li {
+  .footy i {
+    padding: 5px; }
+  .footy :nth-child(2) {
     grid-column-start: 2; }
+  .footy li {
+    margin: 30px;
+    list-style-type: none;
+    line-height: 2; }
+  .footy :nth-child(3) {
+    grid-column-start: 3; }
+  .footy .footer-logo {
+    grid-column-start: 3;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 250px; }
+    .footy .footer-logo img {
+      width: 250px;
+      height: 100px;
+      -o-object-fit: contain;
+         object-fit: contain;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; }
 
 .solidline {
   border: 1px solid #e1e1e1; }
@@ -226,7 +328,7 @@ hr.dashedline {
 .nomargin {
   margin: 0px; }
 
-.pageheader img {
+.pageheader .wp-post-image {
   -o-object-fit: cover;
      object-fit: cover;
   width: 1120px;
@@ -235,8 +337,180 @@ hr.dashedline {
           filter: brightness(75%);
   left: 100px; }
 
-.about {
-  background-color: green; }
+.pageheader .frontpage-logo {
+  position: absolute;
+  top: 20%;
+  left: 42%;
+  width: 1120px;
+  height: 600px; }
+  .pageheader .frontpage-logo img {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+
+.homepage-shop-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+  .homepage-shop-wrapper .homepage-shop-article {
+    width: 250px;
+    height: 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: grey 2px solid; }
+    .homepage-shop-wrapper .homepage-shop-article img {
+      width: 100px;
+      -o-object-fit: contain;
+         object-fit: contain;
+      margin-top: 10px;
+      margin-bottom: 10; }
+    .homepage-shop-wrapper .homepage-shop-article button {
+      font-family: "Novecento";
+      font-size: 14px;
+      padding: 10px 20px;
+      margin-left: 10px;
+      background-color: #248A83;
+      border: #248A83 1px solid;
+      color: white; }
+    .homepage-shop-wrapper .homepage-shop-article p {
+      padding: 10px;
+      text-align: center; }
+
+.journal-heading {
+  font-family: "Novecento";
+  text-align: center;
+  margin: 40px; }
+
+.journal-posts-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 100px; }
+  .journal-posts-wrapper .frontpage-journal-item {
+    border: black 1px solid;
+    display: grid;
+    grid-template-rows: 223px 5px;
+    width: 350px;
+    height: 400px; }
+    .journal-posts-wrapper .frontpage-journal-item img {
+      width: 350px;
+      height: 223px; }
+    .journal-posts-wrapper .frontpage-journal-item div {
+      grid-row-start: 2;
+      background-color: #e1e1e1; }
+    .journal-posts-wrapper .frontpage-journal-item h3 {
+      font-size: 16px;
+      font-family: "Merriweather";
+      padding: 10px; }
+    .journal-posts-wrapper .frontpage-journal-item h1 {
+      font-size: 24px;
+      padding: 10px; }
+    .journal-posts-wrapper .frontpage-journal-item button {
+      font-family: "Novecento";
+      font-size: 14px;
+      padding: 10px 20px;
+      margin-left: 10px;
+      background-color: white;
+      border: 2px solid black; }
+
+.journaldiv {
+  position: relative; }
+  .journaldiv .titlebg {
+    background-color: #248A83;
+    color: white;
+    width: 600px;
+    position: absolute;
+    padding: 10px;
+    z-index: 9;
+    top: 10%; }
+  .journaldiv .bylinebg {
+    background-color: #248A83;
+    color: white;
+    position: absolute;
+    right: 2.15%;
+    bottom: 2.15%; }
+    .journaldiv .bylinebg h2 {
+      font-size: 16px;
+      padding: 5px;
+      font-weight: 300px; }
+  .journaldiv .index-img {
+    margin: 10px 0px 10px 0px;
+    width: 820px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin-right: 10px; }
+
+.article-content {
+  margin: 20px 20px 20px 0px; }
+
+.about .about-header {
+  width: 1120px;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .about .about-header img {
+    width: 1120px;
+    height: 500px;
+    -o-object-fit: cover;
+       object-fit: cover; }
+  .about .about-header h2 {
+    color: white;
+    position: absolute; }
+
+.about h2 {
+  text-align: center;
+  margin: 30px; }
+
+.about p {
+  margin: 0px 80px 40px 80px; }
+
+.find-us-form .req {
+  color: red; }
+
+.find-us-form input {
+  background-color: #DCDCDC;
+  border: none;
+  font-size: 24px;
+  margin: 20px 0px 10px 0px; }
+
+.find-us-form .big-one {
+  height: 200px;
+  width: 500px; }
+
+.find-us-form button {
+  font-family: "Novecento";
+  font-size: 14px;
+  padding: 10px 20px;
+  margin: 10px 0px 50px 0px;
+  background-color: #248A83;
+  border: #248A83 1px solid;
+  color: white; }
+
+.find-us h2 {
+  margin: 30px 0px; }
 
 .pagetitle {
   text-align: center;
@@ -271,7 +545,8 @@ hr.dashedline {
       background-color: white;
       z-index: 9; }
     .grid-item figcaption h1 {
-      position: absolute; }
+      position: absolute;
+      font-size: 12px; }
   .grid-item div {
     grid-row-start: 2;
     background-color: #e1e1e1; }
@@ -284,9 +559,6 @@ hr.dashedline {
 
 a {
   text-decoration: none; }
-
-.blog {
-  background-color: red; }
 
 body {
   display: -webkit-box;

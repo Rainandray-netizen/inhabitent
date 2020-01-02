@@ -9,6 +9,15 @@
 <body <?php body_class();?>>
 <div class="websitebody">
 
+    <?php
+        // echo get_page_template();
+        // echo get_stylesheet_directory();
+        // $pagetype = str_replace(get_stylesheet_directory()."/","",get_page_template());
+        // echo $pagetype;
+        // if ($pagetype === "page.php"){
+        //     echo "transparent area";
+        // }
+    ?>
 
     <header class="header">
         <a href="/inhabitent">
